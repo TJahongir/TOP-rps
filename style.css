@@ -3,6 +3,7 @@
     --light: #ECE5C7;
 }
 
+
 * {
     font-family: 'Orbitron', sans-serif;
     margin: 0;
@@ -30,6 +31,84 @@ header h1{
     color: var(--dark);
 }
 
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    place-content: space-between space-around;
+    height: 100%;
+    padding: 0 25rem;
+    color: var(--light);
+}
+
+.score {
+    display: flex;
+    place-content: center space-between;
+    vertical-align: middle;
+    margin-top: 1rem;
+}
+
+.player_name, .computer_name {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+}
+
+.score_content,
+.score_content span {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.score_content {
+    margin-left: 3rem;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--light);
+    height: 200px;
+    width: 160px;
+    display: flex;
+    place-content: center center;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translate(10px, -10px);
+    box-shadow: -10px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    max-width: 150px;
+    filter: invert(26%) sepia(7%) saturate(2053%) hue-rotate(180deg) brightness(91%) contrast(94%);
+    padding: 0.25rem 1rem;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    place-content: space-around center;
+    width: 100%;
+    text-align: center;
+}
+
+.text_content .round {
+    font-size: 2rem;
+}
+
+.text_content h2 {
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
 /* Footer */
 footer {
     background-color: var(--light);
@@ -44,4 +123,9 @@ footer a {
     text-decoration: none;
     font-weight: 700;
     color: var(--dark);
+}
+
+footer a:hover{
+    transform: translate(10px, -10px);
+    color: white;
 }

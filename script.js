@@ -1,15 +1,12 @@
-let playerSelection = 'paper';
-let computerSelection = '';
+let playerSelection = 'rock';
+//let playerName = prompt("What is your name?" , 'Player')
 
 let computerPlay = (randomNumber) => {
     if (randomNumber === 0) {
-        console.log('Rock')
         return 'rock'
     } else if (randomNumber === 1) {
-        console.log('Paper')
         return 'paper'
     } else {
-        console.log('Scissors')
         return 'scissors'
 }
 }
@@ -31,7 +28,6 @@ let playRound = (playerSelection, computerSelection) => {
 let game = () => {
     for(let i = 0; i < 5; i++) {
         console.log(playRound(playerSelection, computerPlay(randomNumberPicker())));
-        console.log(`${i}`)
     }
 }
 
