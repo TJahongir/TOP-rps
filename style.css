@@ -61,10 +61,6 @@ main {
     font-weight: 900;
 }
 
-.score_content {
-    margin-left: 3rem;
-}
-
 
 .cards {
     display: flex;
