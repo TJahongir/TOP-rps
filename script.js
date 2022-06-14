@@ -13,11 +13,12 @@ const modalTitle = document.querySelector('.modal-title')
 const darken = document.querySelector('.darken')
 
 
-
 let playerScoreCount = 0;
 let computerScoreCount = 0;
 let round = 1
 
+let namePrompt = prompt('What is your name?') 
+playerName.textContent = namePrompt ? namePrompt : 'Player'
 // Helper Functions
 let randomNumberPicker = () => (Math.floor(Math.random() * 3))
 
@@ -88,8 +89,6 @@ let playRound = (playerSelection, computerSelection) => {
     } else {
         computerScoreCount++
         computerScore.textContent = computerScoreCount
-        roundResultText.textContent = `You Lost! ${computerSelection} > ${playerSelection}!`
+        roundResultText.textContent = `You Lost! ${firstCharUpperCase(computerSelection)} > ${playerSelection}!`
     }
-
-
 }
